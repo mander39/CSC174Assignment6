@@ -14,7 +14,7 @@
 		</div>
 
 		<div class="buffer" id="only">
-			<a href="http://csc174.org/midterm/midris2/espresso.php">
+			<a href="details.php">
 				<div class="button-imp">Don't be a fool at the coffee shop. Learn about espresso now!</div>
 			</a>
 		</div>
