@@ -1,9 +1,9 @@
 <?php
 // Database Variables (edit with your own server information)
-$server = 'localhost';
-$user = 'dbproject6';
-$pass = 'project6';
-$db = 'dbproject6';
+$server = '66.147.242.186';
+$user = 'urcscon3_rchestr';
+$pass = 'rchestr';
+$db = 'urcscon3_rchestr';
 
 // Connect to Database
 $connection = mysqli_connect($server,$user,$pass,$db);
