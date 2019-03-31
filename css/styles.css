@@ -84,8 +84,8 @@ blockquote {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 960px;
-	position: fixed;
-    bottom: 0;
+	/*position: fixed;
+    bottom: 0;*/
 }
 
 #home {
@@ -164,6 +164,7 @@ blockquote {
 }
 
 .button-imp {
+	margin-top: 15px;
 	border-radius: 12px;
 	border: 1px solid #a25531;
     background-color: yellow;
@@ -174,6 +175,14 @@ blockquote {
 	text-align: center;
 	font-size: 16px;
 	margin-right: 0px;
+}
+
+.preview {
+	margin-top: 15px;
+	border-radius: 12px;
+	padding: 6px;
+	background-color: #573A1C;
+	color: #F6EDE2;
 }
 
 /*STATES*/
@@ -206,6 +215,10 @@ header h1:hover {
 
 .topic-bottom h2 {
 	font-size: 18px;
+}
+
+.preview h3 {
+	color: #F6EDE2;
 }
 
 /*
