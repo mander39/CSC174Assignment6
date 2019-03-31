@@ -5,9 +5,9 @@
  
 ## Coder reqs 
 - [X] Start the assignment by setting up the repository
-- [ ] Table to get input from website HTML form using remote DB (on webserver)
-- [ ] Wrtite PHP code for site to write HTML form data to the table in the DB on the server
-- [ ] All the appropriate steps for using PHP/mySQL
+- [X] Table to get input from website HTML form using remote DB (on webserver)
+- [X] Wrtite PHP code for site to write HTML form data to the table in the DB on the server
+- [X] All the appropriate steps for using PHP/mySQL
 - [ ] CSS / HTML Validation
 - [ ] Naming and file sizes 
 - [ ] PHP includes
