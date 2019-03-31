@@ -1,6 +1,6 @@
 # CSC174Assignment6
 
-* Due next Monday 4/1
+* Due next Wednesday 4/3
 * 3/26 - initial files uploaded from http://csc174.org/midterm/midris2/index.php
  
 ## Coder reqs 
