@@ -29,4 +29,5 @@ if (isset($_POST['submit'])) {
 	// if the form hasn't been submitted, display the form
 	renderForm('','','','');
 }
+mysqli_close($connection);
 ?>

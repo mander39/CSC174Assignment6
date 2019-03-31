@@ -1,5 +1,5 @@
 <?php
-// creates the edit record form
+require_once("connect-db.php");
 function renderForm($id, $firstname, $email, $error) {
 ?>
 <?php
