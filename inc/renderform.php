@@ -32,4 +32,5 @@ if ($error != '') {
 </html>
 <?php
 }
+mysqli_close($connection);
 ?>
