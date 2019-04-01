@@ -11,8 +11,8 @@ if ($error != '') {
 	<form action="" method="post" class="pure-form pure-form-aligned row formsec">
         <fieldset class="column">
             <div class="pure-control-group">
-                <label for="name">First name</label>
-                <input type="text" placeholder="First Name" name="firstname" value="<?php echo $firstname; ?>"/>
+                <label for="firstname">First name</label>
+                <input id="firstname" type="text" placeholder="First Name" name="firstname" value="<?php echo $firstname; ?>"/>
             </div>
 
             <div class="pure-control-group">
@@ -28,9 +28,7 @@ if ($error != '') {
             </div>
         </fieldset>
     </form>
-
-</body>
-</html>
+		
 <?php
 }
 mysqli_close($connection);

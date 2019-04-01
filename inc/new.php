@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
 
 	} else {
 		// save the data to the database
-		$result = mysqli_query($connection, "INSERT INTO mytable (firstname, email) VALUES ('$firstname', '$email')");
+		$result = mysqli_query($connection, "INSERT INTO emails (firstname, email) VALUES ('$firstname', '$email')");
 
 		// once saved, redirect back to the view page
 		header("Location: index.php");
