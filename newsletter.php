@@ -4,7 +4,7 @@
 		<h2>Subscribe to the Newsletter</h2>
 		<span class="byline">Never pay full price for coffee again!</span>
 	</header>
-    <?php include 'inc/new.php'; ?>
+    <?php include 'inc/insert.php'; ?>
 </main>
 </body>
 </html>
