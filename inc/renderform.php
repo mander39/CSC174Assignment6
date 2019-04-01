@@ -8,7 +8,7 @@ if ($error != '') {
 	echo '<div style="padding:4px; border:1px solid red; color:red;">'.$error.'</div>';
 }
 ?>
-	<form action="" method="post" class="pure-form pure-form-aligned row">
+	<form action="" method="post" class="pure-form pure-form-aligned row formsec">
         <fieldset class="column">
             <div class="pure-control-group">
                 <label for="name">First name</label>
@@ -24,10 +24,11 @@ if ($error != '') {
                 <label for="cb" class="pure-checkbox">
                 <input id="cb" type="checkbox"> Sign me up for the Starbucks Secret Menu Info newsletter too!
                 </label>
-                <input type="submit" name="submit" value="Submit">
+                <input type="submit" name="submit" value="Submit" class="button subbutton">
             </div>
         </fieldset>
     </form>
+
 </body>
 </html>
 <?php

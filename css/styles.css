@@ -1,6 +1,12 @@
+/*******************
+imports
+******************* */
 @import url('https://fonts.googleapis.com/css?family=Lalezar|Cutive+Mono|Special+Elite');
 
-/*BASE*/
+
+/* ****************
+Base styles : defaults for the website
+***************** */
 
 h1, h2, h3 {
 	margin-bottom: 0;
@@ -8,37 +14,6 @@ h1, h2, h3 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: #573A1C;
-}
-
-aside {
-	display: flex;
-	flex-direction: column;
-	flex-basis: 20px;
-	flex: 1;
-	text-align: right;
-	color: red;
-	justify-content: flex-end;
-	font-size: 21px;
-}
-
-figcaption {
-	font-style: italic;
-	margin-top: 8px;
-	font-size: 14px;
-}
-
-section header {
-	margin-bottom: 20px;
-	margin-top: 65px;
-}
-
-header h1 {
-	padding-bottom: 0px;
-	font-size: 50px;
-}
-
-p, aside {
-	line-height: 1.2em;
 }
 
 p {
@@ -78,7 +53,20 @@ blockquote {
 	margin-left: 0;
 }
 
-/*LAYOUT*/
+p, aside {
+	line-height: 1.2em;
+}
+
+figcaption {
+	font-style: italic;
+	margin-top: 8px;
+	font-size: 14px;
+}
+
+
+/* *****************
+Layout styles : for the sections/areas
+***************** */
 
 #nail-down {
 	margin: 0 auto;
@@ -109,8 +97,32 @@ blockquote {
   	margin-top: 50px;
 }
 
-/*MODULES*/
+aside {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 20px;
+	flex: 1;
+	text-align: right;
+	color: red;
+	justify-content: flex-end;
+	font-size: 21px;
+}
 
+section header {
+	margin-bottom: 20px;
+	margin-top: 65px;
+}
+
+header h1 {
+	padding-bottom: 0px;
+	font-size: 50px;
+}
+
+
+
+/* *****************
+Modules styles : reusable, generic, simple
+***************** */
 .row {
   display: flex;
   flex-direction: row;
@@ -123,7 +135,7 @@ blockquote {
   flex-direction: column;
   flex-basis: 100%;
   flex: 3;
-  margin-right: 35px;
+  margin-right: 45px;
 }
 
 .container {
@@ -131,10 +143,11 @@ blockquote {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 960px;
-
-	font-family: 'Cutive Mono';
+	font-family: 'Special Elite';
 	background-color: #d7af8338;
 	font-size: 18px;
+	letter-spacing: 2px;
+	color: #573A1C;
 }
 
 .button {
@@ -148,6 +161,11 @@ blockquote {
 	font-weight: bold;
 }
 
+.subbutton{
+		height: 45px;
+		font-family: 'Special Elite';
+		font-size: 1.2em;
+}
 .byline {
 	font-family: 'Special Elite';
 	color: #573A1C;
@@ -185,57 +203,18 @@ blockquote {
 	color: #F6EDE2;
 }
 
-/*STATES*/
-
-.button-imp:hover {
-	background-color: #f1f196;
-}
-
-.button:hover {
-	background-color: #573A1C;
-}
-
-.topic-bottom a:hover {
-	color: brown;
-}
-
-header h1:hover {
-	color: #7d5d3b;
-}
-
-/*THEME & MISC*/
-
-#only a {
-	color: white;
-}
-
-.topic-bottom a {
-	color: blue;
-}
-
-.topic-bottom h2 {
-	font-size: 18px;
-}
-
-.preview h3 {
-	color: #F6EDE2;
-}
-
-/*
-
-FORM STUFF
-Adapted from form options for Pure by Yahoo!
-
-*/
+/*FORM - Adapted from form options for Pure by Yahoo!*/
 
 .pure-form input[type="text"], .pure-form input[type="email"] {
-    padding: 0.5em 0.6em;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 3px #ddd;
-    border-radius: 4px;
-    vertical-align: middle;
-    box-sizing: border-box;
+	padding: 0.5em 0.6em;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 3px #ddd;
+	border-radius: 4px;
+	vertical-align: middle;
+	box-sizing: border-box;
+	font-family: 'Special Elite';
+	height: 50px;
 }
 
 .pure-form .pure-checkbox {
@@ -252,6 +231,13 @@ Adapted from form options for Pure by Yahoo!
     border: 0;
 }
 
+.formsec{
+		border: solid;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    top: 30px;
+}
 .pure-form-aligned input,
 .pure-form-message-inline {
     display: inline-block;
@@ -273,4 +259,43 @@ Adapted from form options for Pure by Yahoo!
 }
 .pure-form-aligned .pure-controls {
     margin: 1.5em 0 0 11em;
+}
+
+
+
+/* *****************
+State styles
+***************** */
+
+.button-imp:hover {
+	background-color: #f1f196;
+}
+
+.button:hover {
+	background-color: #573A1C;
+}
+
+.topic-bottom a:hover {
+	color: brown;
+}
+
+header h1:hover {
+	color: #7d5d3b;
+}
+
+/*THEME & MISC*/
+#only a {
+	color: white;
+}
+
+.topic-bottom a {
+	color: blue;
+}
+
+.topic-bottom h2 {
+	font-size: 18px;
+}
+
+.preview h3 {
+	color: #F6EDE2;
 }
