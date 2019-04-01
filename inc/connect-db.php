@@ -1,6 +1,6 @@
 <?php
 // Database Variables (edit with your own server information)
-$server = '66.147.242.186';
+$server = '66.147.242.186'; // Change to localhost when moved to webserver 
 $user = 'urcscon3_rchestr';
 $pass = 'rchestr';
 $db = 'urcscon3_rchestr';
