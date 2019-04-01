@@ -11,7 +11,7 @@ function renderForm($id, $firstname, $email, $error) {
 
             <div class="pure-control-group">
                 <label for="email">Email address</label>
-                <input id="email" type="email" placeholder="Email address" name="email""/>
+                <input id="email" type="email" placeholder="Email address" name="email"/>
             </div>
 
             <div class="pure-controls">
