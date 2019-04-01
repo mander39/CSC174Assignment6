@@ -2,13 +2,7 @@
 require_once("connect-db.php");
 function renderForm($id, $firstname, $email, $error) {
 ?>
-<?php
-// if there are any errors, display them
-if ($error != '') {
-	echo '<div style="padding:4px; border:1px solid red; color:red;">'.$error.'</div>';
-}
-?>
-	<form action="" method="post" class="pure-form pure-form-aligned row formsec">
+	<form action="#" method="post" class="pure-form pure-form-aligned row formsec">
         <fieldset class="column">
             <div class="pure-control-group">
                 <label for="firstname">First name</label>
@@ -27,6 +21,7 @@ if ($error != '') {
                 <input type="submit" name="submit" value="Submit" class="button subbutton">
             </div>
         </fieldset>
+        <?php if ($error != '') { echo '<div style="padding:4px; border:1px solid red; color:red; margin-left: 10%;">'.$error.'</div>'; }?>
     </form>
 		
 <?php

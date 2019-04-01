@@ -13,6 +13,7 @@ if (isset($_POST['submit'])) {
 	// check to make sure both fields are entered
 	if ($firstname == '' || $email == '') {
 		// generate error message
+		error_reporting(0);
 		$error = 'ERROR: Please fill in all required fields!';
 
 		// if either field is blank, display the form again
