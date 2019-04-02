@@ -8,9 +8,9 @@
 - [X] Table to get input from website HTML form using remote DB (on webserver)
 - [X] Wrtite PHP code for site to write HTML form data to the table in the DB on the server
 - [X] All the appropriate steps for using PHP/mySQL
-- [ ] CSS / HTML Validation
-- [ ] Naming and file sizes 
-- [ ] PHP includes
+- [X] CSS / HTML Validation
+- [X] Naming and file sizes 
+- [X] PHP includes
 - [ ] Submission of only necessary files to web server 
 ## IA reqs 
 - [ ] Set the primary goal of the site to getting users to sign-up
