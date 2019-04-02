@@ -44,9 +44,7 @@ if (isset($_POST['submit'])) {
     } else {
         // save the data to the database
         $result = mysqli_query($connection, "INSERT INTO emails (firstname, email) VALUES ('$firstname', '$email')");
-
-        // once saved, redirect back to the view page
-        header("Location: thanks.php");
+        echo("<script>location.href = 'thanks.php';</script>");
     }
 } else {
     // if the form hasn't been submitted, display the form
