@@ -11,7 +11,7 @@
 - [X] CSS / HTML Validation
 - [X] Naming and file sizes 
 - [X] PHP includes
-- [ ] Submission of only necessary files to web server 
+- [X] Submission of only necessary files to web server 
 ## IA reqs 
 - [ ] Set the primary goal of the site to getting users to sign-up
 - [ ] Secondary goal of the site is to get users to read more about the topic
