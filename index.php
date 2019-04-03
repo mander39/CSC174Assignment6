@@ -11,14 +11,15 @@
 			<!-- I know an angel cries everytime <br> is used, but it's OK to use it for poems! -->
 
 			<!-- <cite>– Haruki Murakami, Colorless Tsukuru Tazaki</cite> -->
-
-			<div class="preview row">
-			<!-- <a href="details.php"> -->
-			<h3><a href="details.php" class="tit">Read More</a></h3>
-				<p>Not sure about committing to a newsletter? Browse our house blend of coffee information. Learn what's what, when to drink, and a little history of each. And then go subscribe.</p>
-				<!-- <img src="images/espresso.jpg" alt="A traditional espresso"> -->
-			<!-- </a> -->
-			</div>
+			<a href="details.php" class="tit">
+				<div class="preview row">
+				<!-- <a href="details.php"> -->
+				<h3>Read More</h3>
+					<p>Not sure about committing to a newsletter? Browse our house blend of coffee information. Learn what's what, when to drink, and a little history of each. And then go subscribe.</p>
+					<!-- <img src="images/espresso.jpg" alt="A traditional espresso"> -->
+				<!-- </a> -->
+				</div>
+			</a>
 
 		</div>
 

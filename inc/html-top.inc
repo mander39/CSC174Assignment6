@@ -10,7 +10,7 @@
 	<div class="row">
 		<header class="column"><a href="index.php">
 			<h1>Explaining Espressos</h1>
-			<span class="byline">For UR coffee shop patrons wondering how their drinks are made...</span></a>
+			<span class="byline">The weekly newsletter for UR coffee shop patrons wondering how their drinks are made...</span></a>
 		</header>
 
 		<aside>To learn how to <strong>save money</strong> on coffee: <a href="newsletter.php" class="button">sign up for the newsletter!</a></aside>
