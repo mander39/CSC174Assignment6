@@ -1,6 +1,26 @@
 <?php
 require_once("config.php");
-function renderForm($id, $firstname, $email, $error) {
+
+// check if the form has been submitted. If it has, start to process the form and save it to the database
+if (isset($_POST['submit'])) {
+    // get form data, making sure it is valid
+    $firstname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['firstname']));
+    $email = mysqli_real_escape_string($connection, htmlspecialchars($_POST['email']));
+
+    // check to make sure both fields are entered
+    if ($firstname == '' || $email == '') {
+        // generate error message
+        error_reporting(0); //Hide ugly wamp error for empty fields 
+        $error = 'ERROR: Please fill in all required fields!';
+
+    } else {
+        // save the data to the database
+        mysqli_query($connection, "INSERT INTO emails (firstname, email) VALUES ('$firstname', '$email')");
+        echo("<script>location.href = 'thanks.php';</script>");
+        mysqli_close($connection);
+    }
+}
+
 ?>
 	<form action="#" method="post" class="pure-form pure-form-aligned row formsec">
         <fieldset class="column">
@@ -23,32 +43,3 @@ function renderForm($id, $firstname, $email, $error) {
         </fieldset>
         <?php if ($error != '') { echo '<div style="padding:4px; border:1px solid red; color:red; margin-left: 10%;">'.$error.'</div>'; }?>
     </form>
-		
-<?php
-}
-// check if the form has been submitted. If it has, start to process the form and save it to the database
-if (isset($_POST['submit'])) {
-    // get form data, making sure it is valid
-    $firstname = mysqli_real_escape_string($connection, htmlspecialchars($_POST['firstname']));
-    $email = mysqli_real_escape_string($connection, htmlspecialchars($_POST['email']));
-
-    // check to make sure both fields are entered
-    if ($firstname == '' || $email == '') {
-        // generate error message
-        error_reporting(0); //Hide ugly wamp error for empty fields 
-        $error = 'ERROR: Please fill in all required fields!';
-
-        // if either field is blank, display the form again
-        renderForm($id, $firstname, $email, $error);
-
-    } else {
-        // save the data to the database
-        $result = mysqli_query($connection, "INSERT INTO emails (firstname, email) VALUES ('$firstname', '$email')");
-        echo("<script>location.href = 'thanks.php';</script>");
-    }
-} else {
-    // if the form hasn't been submitted, display the form
-    renderForm('','','','');
-}
-mysqli_close($connection);
-?>
